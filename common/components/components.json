@@ -1,0 +1,33 @@
+{
+	"components": [
+		{
+			"id": "wiz-text",
+			"name": {
+				"eng": "Text"
+			},
+			"icon": "node_modules/wiz-text/icon.png"
+		},
+		{
+			"id": "wiz-image",
+			"name": {
+				"eng": "Image"
+			},
+			"icon": "node_modules/wiz-image/icon.png"
+		},
+		{
+			"id": "wiz-button",
+			"name": {
+				"eng": "Button"
+			},
+			"icon": "node_modules/wiz-button/icon.png"
+		},
+		{
+			"id": "wiz-site-lp-acordion",
+			"name": {
+				"eng": "Acordion element"
+			},
+			"icon": "node_modules/wiz-site-lp-acordion/icon.png"
+		}
+	],
+	"ignore": []
+}

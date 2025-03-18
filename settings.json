@@ -1,0 +1,30 @@
+{
+  "name": "Global LP Template 2.0",
+  "id": "3083003d-6e42-4191-8faf-0e69928e01e0",
+  "localization": {
+    "current": "eng",
+    "original": "",
+    "langs": [
+      "",
+      "eng"
+    ]
+  },
+  "templateType": "RTE",
+  "templateSubType": "None",
+  "targetCLM": {},
+  "theme": {
+    "default": "plegridy",
+    "current": "plegridy",
+    "scheme": "scheme1",
+    "dependencies": {
+      "brand": [
+        "Plegridy, ADvance, Avonex, BBU, Benepali, Biogen, BiogenLinc, Cleo, ECHO, Fampyra, Flixabi, Imraldi, Multiplechoices, Neurodiem, Spinraza, Tecfidera, Tisma, Tysabri, Vumerity"
+      ]
+    }
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "targetDevices": [],
+  "frameworkVersion": "5.8.0"
+}

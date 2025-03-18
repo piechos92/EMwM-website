@@ -1,0 +1,315 @@
+{
+	"components": [
+		{
+			"id": "bg-lp-block-h1",
+			"name": "Header background",
+			"model": {},
+			"icon": "common/blocks-library/bg-lp-block-h1/media/images/logo.png",
+			"metadata": [
+				{
+					"id": "image_size",
+					"label": "Logo size",
+					"value": "256 x 96"
+				},
+				{
+					"id": "image_size",
+					"label": "Background size",
+					"value": "1024 x 400"
+				}
+			]
+		},
+		{
+			"id": "bg-lp-block-h2",
+			"name": "Header with 1 logo",
+			"model": {},
+			"icon": "common/blocks-library/bg-lp-block-h2/media/images/logo.png",
+			"metadata": [
+				{
+					"id": "image_size",
+					"label": "Logo size",
+					"value": "200 x 66"
+				}
+			]
+		},
+		{
+			"id": "bg-lp-block-h4",
+			"name": "Header with with 2 logos",
+			"model": {},
+			"icon": [
+				"common/blocks-library/bg-lp-block-h4/media/images/logo.png",
+				"common/blocks-library/bg-lp-block-h4/media/images/add-logo.png"
+			],
+			"metadata": [
+				{
+					"id": "image_size",
+					"label": "Logo size",
+					"value": "256 x 96"
+				},
+				{
+					"id": "image_size",
+					"label": "Product size",
+					"value": "200 x 66"
+				}
+			]
+		},
+		{
+			"id": "bg-lp-block-c2",
+			"name": "Block with title, three column with text and image and button",
+			"model": {},
+			"icon": "common/blocks-library/bg-lp-block-c2/media/images/icon.png",
+			"metadata": [
+				{
+					"id": "image_size",
+					"label": "Icon size",
+					"value": "32 x 32"
+				}
+			]
+		},
+		{
+			"id": "bg-lp-block-c5",
+			"name": "Block with title/text/two images/button",
+			"model": {},
+			"icon": "common/blocks-library/bg-lp-block-c5/media/images/placeholder-image.png",
+			"metadata": [
+				{
+					"id": "image_size",
+					"label": "Placeholder image size",
+					"value": "800 x 540"
+				}
+			]
+		},
+		{
+			"id": "bg-lp-block-c7",
+			"name": "Block with full width video",
+			"model": {},
+			"metadata": []
+		},
+		{
+			"id": "bg-lp-block-c8",
+			"name": "Block with 2 video with title and description",
+			"model": {},
+			"metadata": []
+		},
+		{
+			"id": "bg-lp-block-c10",
+			"name": "Block with two buttons for load PDF",
+			"model": {},
+			"icon": "common/blocks-library/bg-lp-block-c10/media/images/200x100.png",
+			"metadata": [
+				{
+					"id": "image_size",
+					"label": "Placeholder image size",
+					"value": "200 x 100"
+				}
+			]
+		},
+		{
+			"id": "bg-lp-block-c11",
+			"name": "Block with title,text and two buttons",
+			"model": {},
+			"icon": "common/blocks-library/bg-lp-block-c11/media/images/placeholder-image.png",
+			"metadata": [
+				{
+					"id": "image_size",
+					"label": "Placeholder image size",
+					"value": "800 x 540"
+				}
+			]
+		},
+		{
+			"id": "bg-lp-block-c12",
+			"name": "Block with title,  2 separated blocks with image, description and button",
+			"model": {},
+			"icon": "common/blocks-library/bg-lp-block-c12/media/images/placeholder-image.png",
+			"metadata": [
+				{
+					"id": "image_size",
+					"label": "Placeholder image size",
+					"value": "800 x 540"
+				},
+				{
+					"id": "image_size",
+					"label": "Placeholder image size",
+					"value": "800 x 540"
+				}
+			]
+		},
+		{
+			"id": "bg-lp-block-c15",
+			"name": "Block for Video",
+			"model": {},
+			"icon": "common/blocks-library/bg-lp-block-c15/media/images/placeholder-image.png",
+			"metadata": [
+				{
+					"id": "image_size",
+					"label": "Placeholder image size",
+					"value": "960 x 540"
+				}
+			]
+		},
+		{
+			"id": "bg-lp-block-c16",
+			"name": "Block for SoundCloud",
+			"model": {},
+			"icon": "common/blocks-library/bg-lp-block-c16/media/images/avatar-placeholder.png",
+			"metadata": [
+				{
+					"id": "image_size",
+					"label": "Speaker image size",
+					"value": "150 x 150"
+				},
+				{
+					"id": "image_size",
+					"label": "Play icon size",
+					"value": "42 x 42"
+				},
+				{
+					"id": "image_size",
+					"label": "Soundcloud logo size",
+					"value": "100 x 16"
+				},
+				{
+					"id": "image_size",
+					"label": "Soundcloud placeholder size",
+					"value": "944 x 88"
+				}
+			]
+		},
+		{
+			"id": "bg-lp-block-c17",
+			"name": "Block for FlipSnack",
+			"model": {},
+			"icon": "common/blocks-library/bg-lp-block-c17/media/images/placeholder-flipsnack.png",
+			"metadata": [
+				{
+					"id": "image_size",
+					"label": "Flipsnack image size",
+					"value": "800 x 600"
+				}
+			]
+		},
+		{
+			"id": "bg-lp-block-c6",
+			"name": "bg-lp-block-c6",
+			"model": {},
+			"icon": "common/blocks-library/bg-lp-block-c6/media/images/background_image.png",
+			"metadata": [
+				{
+					"id": "image_size",
+					"label": "Background image size",
+					"value": "1024 x 300"
+				}
+			]
+		},
+		{
+			"id": "bg-lp-block-c4",
+			"name": "bg-lp-block-c4",
+			"model": {},
+			"metadata": []
+		},
+		{
+			"id": "bg-lp-block-c1",
+			"name": "bg-lp-block-c1",
+			"model": {},
+			"icon": "common/blocks-library/bg-lp-block-c1/media/images/icon.png",
+			"metadata": [
+				{
+					"id": "image_size",
+					"label": "Icon size",
+					"value": "32 x 32"
+				}
+			]
+		},
+		{
+			"id": "bg-lp-block-c3",
+			"name": "bg-lp-block-c3",
+			"model": {},
+			"metadata": []
+		},
+		{
+			"id": "bg-lp-block-c9",
+			"name": "bg-lp-block-c9",
+			"model": {},
+			"icon": "common/blocks-library/bg-lp-block-c9/media/images/icon.png",
+			"metadata": [
+				{
+					"id": "image_size",
+					"label": "Icon image size",
+					"value": "64 x 64"
+				}
+			]
+		},
+		{
+			"id": "bg-lp-block-c13",
+			"name": "Acordion",
+			"model": {},
+			"metadata": []
+		},
+		{
+			"id": "bg-lp-block-c14",
+			"name": "Tabs",
+			"model": {},
+			"metadata": []
+		},
+		{
+			"id": "bg-lp-block-f1",
+			"name": "Footer with 2 logos",
+			"model": {},
+			"icon": [
+				"common/blocks-library/bg-lp-block-f1/media/images/logo.png",
+				"common/blocks-library/bg-lp-block-f1/media/images/add-logo.png"
+			],
+			"metadata": [
+				{
+					"id": "image_size",
+					"label": "Logo image size",
+					"value": "256 x 96"
+				},
+				{
+					"id": "image_size",
+					"label": "Logo image size",
+					"value": "200 x 100"
+				}
+			]
+		},
+		{
+			"id": "bg-lp-block-f2",
+			"name": "Footer with 1 logos",
+			"model": {},
+			"icon": "common/blocks-library/bg-lp-block-f2/media/images/icon.png",
+			"metadata": [
+				{
+					"id": "image_size",
+					"label": "Logo image size",
+					"value": "200 x 100"
+				}
+			]
+		},
+		{
+			"id": "bg-lp-block-f3",
+			"name": "Footer with background",
+			"model": {},
+			"icon": "common/blocks-library/bg-lp-block-f3/media/images/icon.png",
+			"metadata": [
+				{
+					"id": "image_size",
+					"label": "Logo image size",
+					"value": "228 x 76"
+				}
+			]
+		},
+		{
+			"id": "bg-lp-block-f4",
+			"name": "default footer",
+			"model": {},
+			"icon": "common/blocks-library/bg-lp-block-f4/media/images/icon.png",
+			"metadata": [
+				{
+					"id": "image_size",
+					"label": "Logo image size",
+					"value": "200 x 100"
+				}
+			]
+		}
+	]
+}

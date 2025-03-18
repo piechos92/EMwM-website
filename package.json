@@ -1,0 +1,46 @@
+{
+	"name": "landing-page-template",
+	"templateId": "site-template",
+	"version": "0.0.0",
+	"description": "Landing page template",
+	"main": "./build/dev/app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"cobalt": {
+		"type": "layout"
+	},
+	"author": "Web 3 team",
+	"license": "ISC",
+	"dependencies": {
+		"@blocks/module-placeholder": "git+ssh://git@git.qapint.com/ewizardjs/site/blocks/module-placeholder.git#1.0.6",
+		"ewizardjs": "git+ssh://git@git.qapint.com/ewizardjs/ewizardjs.git#5.8.0",
+		"wiz-block": "git+ssh://git@git.qapint.com/ewizardjs/site/components/wiz-block.git#2.0.1",
+		"wiz-block-v2": "git+ssh://git@git.qapint.com/ewizardjs/site/components/wiz-block.git#2.0.1",
+		"wiz-image": "git+ssh://git@git.qapint.com/ewizardjs/site/components/wiz-image.git#1.2.5",
+		"wiz-placeholder": "git+ssh://git@git.qapint.com/ewizardjs/site/components/wiz-placeholder.git#1.0.9",
+		"wiz-video": "git+ssh://git@git.qapint.com/ewizardjs/edetailer/components/wiz-video.git#v0.5.5",
+		"wiz-text": "git+ssh://git@git.qapint.com/ewizardjs/site/components/wiz-text.git#v1.3.5",
+		"wiz-button": "git+ssh://git@git.qapint.com/ewizardjs/site/components/wiz-button.git#1.0.1",
+		"wiz-site-tabs": "git+ssh://git@git.qapint.com/dcf/Biogen/landing-pages/components/wiz-site-tabs.git#v0.0.1",
+		"wiz-site-lp-acordion": "git+ssh://git@git.qapint.com/dcf/Biogen/landing-pages/components/wiz-site-lp-acordion.git#v0.0.1"
+	},
+	"devDependencies": {
+		"babel-eslint": "^10.1.0",
+		"eslint-config-airbnb-base": "^14.2.1",
+		"eslint-config-dcf": "git+ssh://git@git.qapint.com:dcf/Biogen/edetailing/tools/eslint-config-dcf.git#v0.0.2",
+		"eslint-plugin-import": "^2.24.2",
+		"eslint-plugin-vue": "^7.17.0",
+		"eslint": "^7.32.0",
+		"stylelint-config-dcf": "git+ssh://git@git.qapint.com:dcf/Biogen/edetailing/tools/stylelint-config-dcf.git#v0.0.2",
+		"stylelint-config-recommended-scss": "^4.3.0",
+		"stylelint-config-standard": "^22.0.0",
+		"stylelint-order": "^4.1.0",
+		"stylelint-scss": "^3.20.1",
+		"stylelint": "^13.13.1"
+	}
+}

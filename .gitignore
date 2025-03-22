@@ -1,7 +1,0 @@
-/node_modules
-.idea
-debug.log
-*.zip
-/build
-/.ewizard/debug.log
-.history

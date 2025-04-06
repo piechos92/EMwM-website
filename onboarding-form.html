@@ -114,7 +114,7 @@
                 </p>
             </div>
 
-            <button type="submit" class="submit-btn">Submit</button>
+            <button type="submit" class="submit-btn" id="submitButton">Submit</button>
         </form>
         <div id="successMessage">
             Form submitted successfully. Please check your email.
@@ -126,6 +126,11 @@
             event.preventDefault(); // Prevent the default form submission
 
             var form = this;
+            var submitButton = document.getElementById('submitButton');
+
+            // Disable the submit button to prevent multiple clicks
+            submitButton.disabled = true;
+
             var formData = new FormData(form);
 
             fetch(form.action, {
@@ -140,11 +145,15 @@
                     document.getElementById('successMessage').style.display = 'block';
                 } else {
                     alert('There was a problem submitting the form. Please try again.');
+                    // Re-enable the submit button in case of error
+                    submitButton.disabled = false;
                 }
             })
             .catch(function(error) {
                 console.error('Error:', error);
                 alert('There was an error submitting the form. Please try again.');
+                // Re-enable the submit button in case of error
+                submitButton.disabled = false;
             });
         });
     </script>

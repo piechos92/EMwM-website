@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Knowledge System AI Assistant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333333;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #555555;
+            font-size: 16px;
+            margin-top: 0;
+        }
+        form {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 6px;
+            color: #333333;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .description {
+            font-size: 14px;
+            color: #777777;
+            margin-top: 5px;
+        }
+        .submit-btn {
+            display: inline-block;
+            background: #007bff;
+            color: #ffffff !important;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Knowledge System AI Assistant</h1>
+        <p>Fill out this form if you didn’t receive an email with instructions on creating a custom GPT for Knowledge System AI Assistant.</p>
+
+        <form action="https://primary-production-f12b.up.railway.app/webhook/3c310ea7-57e0-46dc-94a1-5195dd4392b2" method="POST">
+            <!-- Pole na adres email -->
+            <div class="form-group">
+                <label for="email">Email address*</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Enter your email"
+                    required 
+                />
+                <p class="description">You must use the same email which you used for Stripe payment.</p>
+            </div>
+
+            <!-- Pole na klucz Notion API -->
+            <div class="form-group">
+                <label for="notion_api_key">Notion API Key*</label>
+                <input 
+                    type="text" 
+                    id="notion_api_key" 
+                    name="notion_api_key" 
+                    placeholder="Enter your Notion API key"
+                    required 
+                />
+                <p class="description">
+                    Provide your Notion API key. The API key needs to have granted access 
+                    to the following databases: Content, Books, Courses, Content Sources, Notes &amp; Thoughts.
+                </p>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

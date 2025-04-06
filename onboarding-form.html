@@ -70,6 +70,13 @@
         .submit-btn:hover {
             background: #0056b3;
         }
+        #successMessage {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+            color: green;
+            font-size: 16px;
+        }
     </style>
 </head>
 <body>
@@ -77,8 +84,8 @@
         <h1>Knowledge System AI Assistant</h1>
         <p>Fill out this form if you didn’t receive an email with instructions on creating a custom GPT for Knowledge System AI Assistant.</p>
 
-        <form action="https://primary-production-f12b.up.railway.app/webhook/3c310ea7-57e0-46dc-94a1-5195dd4392b2" method="POST">
-            <!-- Pole na adres email -->
+        <form id="myForm" action="https://primary-production-f12b.up.railway.app/webhook/3c310ea7-57e0-46dc-94a1-5195dd4392b2" method="POST">
+            <!-- Email field -->
             <div class="form-group">
                 <label for="email">Email address*</label>
                 <input 
@@ -91,7 +98,7 @@
                 <p class="description">You must use the same email which you used for Stripe payment.</p>
             </div>
 
-            <!-- Pole na klucz Notion API -->
+            <!-- Notion API Key field -->
             <div class="form-group">
                 <label for="notion_api_key">Notion API Key*</label>
                 <input 
@@ -109,6 +116,37 @@
 
             <button type="submit" class="submit-btn">Submit</button>
         </form>
+        <div id="successMessage">
+            Form submitted successfully. Please check your email.
+        </div>
     </div>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            var form = this;
+            var formData = new FormData(form);
+
+            fetch(form.action, {
+                method: 'POST',
+                body: formData
+            })
+            .then(function(response) {
+                if (response.ok) {
+                    // Clear form fields
+                    form.reset();
+                    // Display success message
+                    document.getElementById('successMessage').style.display = 'block';
+                } else {
+                    alert('There was a problem submitting the form. Please try again.');
+                }
+            })
+            .catch(function(error) {
+                console.error('Error:', error);
+                alert('There was an error submitting the form. Please try again.');
+            });
+        });
+    </script>
 </body>
 </html>

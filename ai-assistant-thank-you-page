@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Thank You for Your Purchase</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 700px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+      margin: 0.5em 0;
+      font-size: 2rem;
+    }
+    p {
+      color: #555;
+      font-size: 16px;
+      margin: 0.5em 0 1em;
+    }
+    .highlight {
+      font-weight: bold;
+      color: #007bff;
+    }
+    .note {
+      font-size: 14px;
+      color: #999;
+      margin-top: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎉 Thank You for Your Purchase!</h1>
+    <p>
+      Now, please check your email inbox for instructions on how to set up your 
+      <span class="highlight">Custom GPT</span>. 📩
+    </p>
+    <p>
+      If you don’t see it, check your <span class="highlight">spam</span> or 
+      <span class="highlight">promotions</span> folder.
+    </p>
+    <p class="note">
+      If you have any issues, contact our support at <a href="mailto:contact@executionmasterywithmatt.com">contact@executionmasterywithmatt.com</a>
+    </p>
+  </div>
+</body>
+</html>

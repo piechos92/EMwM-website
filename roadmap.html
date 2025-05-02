@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product & Content Roadmap</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #111827;
+      --card-bg-dark: #1f2937;
+      --line-color: #fb923c;
+      --accent: #f97316;
+      --text-light: #f3f4f6;
+      --text-muted: #9ca3af;
+      --font: 'Inter', sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg-dark); color: var(--text-light); font-family: var(--font); padding: 40px; }
+    .roadmap { position: relative; max-width: 900px; margin: 0 auto; padding: 20px 0; }
+    .roadmap::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 50%; transform: translateX(-50%);
+      width: 4px; height: 100%; background: var(--line-color);
+    }
+    .item { position: relative; width: 50%; padding: 20px 40px; }
+    .item:nth-child(odd) { left: 0; text-align: right; }
+    .item:nth-child(even) { left: 50%; text-align: left; }
+    .item::after {
+      content: '';
+      position: absolute; top: 30px;
+      width: 16px; height: 16px; border-radius: 50%;
+      background: var(--accent);
+      border: 4px solid var(--bg-dark);
+      box-shadow: 0 0 0 4px rgba(249,115,22,0.25);
+    }
+    .item:nth-child(odd)::after { right: -30px; }
+    .item:nth-child(even)::after { left: -30px; }
+    .content-box { background: var(--card-bg-dark); padding: 20px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.5); transition: transform 0.3s ease; }
+    .content-box:hover { transform: translateY(-5px); }
+    .content-box h3 { font-size: 1.4em; margin-bottom: 8px; color: var(--accent); }
+    .content-box .meta { font-size: 0.9em; color: var(--text-muted); margin-bottom: 12px; font-weight: 600; }
+    .content-box p { margin-bottom: 12px; line-height: 1.5; }
+    .icons a { margin-right: 12px; display: inline-flex; align-items: center; }
+    .icons img { width: 24px; height: 24px; object-fit: contain; }
+  </style>
+</head>
+<body>
+  <!--
+    IMPORTANT: Freepik hotlinking may be blocked, so download the icons and
+    place them in your project's /assets/icons/ folder. Then update the src
+    attributes accordingly (e.g., /assets/icons/youtube-icon.jpg).
+  -->
+  <section class="roadmap">
+    <!-- Item 1 -->
+    <div class="item">
+      <div class="content-box">
+        <h3>1. Knowledge board</h3>
+        <div class="meta">Automation • Planned: April 6, 2025</div>
+        <p><strong>Includes:</strong> Knowledge Board, Mobile, Content Sources DB, Content Items DB, Books DB, Courses DB, Notes & Thoughts DB, Knowledge Areas DB</p>
+        <div class="icons">
+          <a href="https://www.notion.so/1a7d27f154588001b469f3f4c83514ac" title="Watch Video">
+            <img src="/assets/icons/youtube-icon.jpg" alt="YouTube Icon">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Item 2 -->
+    <div class="item">
+      <div class="content-box">
+        <h3>2. Knowledge consumption agent</h3>
+        <div class="meta">AI agent • Planned: April 6, 2025</div>
+        <p><strong>Includes:</strong> Retrieve content count, Retrieve content, Change status, Capture notes, Capture books, Capture courses</p>
+        <div class="icons">
+          <a href="https://www.notion.so/1e4d27f1545880eebe0bf16bfb27253d" title="Watch Video">
+            <img src="/assets/icons/youtube-icon.jpg" alt="YouTube Icon">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Item 3 -->
+    <div class="item">
+      <div class="content-box">
+        <h3>3. Weekly knowledge review</h3>
+        <div class="meta">Routine • Planned: April 6, 2025</div>
+        <p><strong>Includes:</strong> Validate data, Review towards goals, Broaden horizons, Build expertise, Stay globally aware, Update knowledge areas</p>
+        <div class="icons">
+          <!-- no icons for this item -->
+        </div>
+      </div>
+    </div>
+    <!-- Item 4 -->
+    <div class="item">
+      <div class="content-box">
+        <h3>4. Weekly knowledge review agent</h3>
+        <div class="meta">AI agent • Planned: July 6, 2025</div>
+        <p><strong>Includes:</strong> Validate data, Review towards goals, Broaden horizons, Build expertise, Stay globally aware, Update knowledge areas</p>
+        <div class="icons">
+          <a href="https://www.notion.so/1e4d27f1545880eebe0bf16bfb27253d" title="Watch Video">
+            <img src="/assets/icons/youtube-icon.jpg" alt="YouTube Icon">
+          </a>
+          <a href="https://www.notion.so/1a7d27f1545880beaec2fcf047ab6cc2" title="View Product">
+            <img src="/assets/icons/package-icon.png" alt="Product Icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

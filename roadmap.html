@@ -1,185 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="wf-active" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product & Content Roadmap</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-dark: #191919;
-      --card-bg-dark: #1f2937;
-      --line-color: #fb923c;
-      --accent: #f97316;
-      --text-light: #f3f4f6;
-      --text-muted: #9ca3af;
-      --font: 'Inter', sans-serif;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      background: var(--bg-dark);
-      color: var(--text-light);
-      font-family: var(--font);
-      padding: 40px;
-    }
-    /* Header with enlarged logo */
-    .site-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 20px 40px;
-      background: var(--bg-dark);
-      position: relative;
-      z-index: 100;
-    }
-    .site-header .logo img {
-      width: 150px;
-      height: auto;
-    }
-    .site-nav ul {
-      list-style: none;
-      display: flex;
-      gap: 24px;
-    }
-    .site-nav a {
-      color: var(--text-muted);
-      text-decoration: none;
-      font-size: 0.875rem;
-      font-weight: 500;
-      letter-spacing: 0.05em;
-      transition: color 0.2s;
-      white-space: nowrap;
-    }
-    .site-nav a:hover { color: var(--text-light); }
-    .roadmap {
-      position: relative;
-      max-width: 900px;
-      margin: 40px auto 0;
-      padding: 20px 0;
-    }
-    .roadmap::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 50%; transform: translateX(-50%);
-      width: 4px; height: 100%; background: var(--line-color);
-    }
-    .item {
-      position: relative;
-      width: 50%; padding: 20px 40px;
-    }
-    .item:nth-child(odd) { left: 0; text-align: right; }
-    .item:nth-child(even) { left: 50%; text-align: left; }
-    .item::after {
-      content: '';
-      position: absolute;
-      top: 30px;
-      width: 16px; height: 16px;
-      border-radius: 50%;
-      background: var(--accent);
-      border: 4px solid transparent;
-      box-shadow: 0 0 0 4px rgba(249,115,22,0.25);
-    }
-    .item:nth-child(odd)::after { right: -30px; }
-    .item:nth-child(even)::after { left: -30px; }
-    .content-box {
-      background: var(--card-bg-dark);
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-      transition: transform 0.3s ease;
-    }
-    .content-box:hover { transform: translateY(-5px); }
-    .content-box h3 {
-      font-size: 1.4em;
-      margin-bottom: 8px;
-      color: var(--accent);
-    }
-    .content-box .meta {
-      font-size: 0.9em;
-      color: var(--text-muted);
-      margin-bottom: 12px;
-      font-weight: 600;
-    }
-    .content-box p { margin-bottom: 12px; line-height: 1.5; }
-    .icons a { margin-right: 12px; display: inline-flex; align-items: center; }
-    .icons img { width: 24px; height: 24px; object-fit: contain; }
-    /* Disabled state */
-    .content-box.disabled {
-      opacity: 0.4;
-    }
-  </style>
+  <meta charset="utf-8">
+  <title>Execution Mastery with Matt - Roadmap</title>
+  <meta name="description" content="Explore the Execution Mastery with Matt roadmap.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Execution Mastery with Matt - Roadmap">
+  <meta property="og:description" content="Explore the Execution Mastery with Matt roadmap.">
+  <meta property="og:image" content="https://s3.us-east-1.amazonaws.com/cdn-siter/02af5d2c-f257-4457-899f-4b87440880ef-url_og_image.png">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" href="https://api.siter.io/assets/application.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Lato:400,700" media="all">
 </head>
-<body>
+<body class="siter-ready">
+  <!-- Header (identical to Contact page) -->
   <header class="site-header">
-    <a href="/" class="logo"><img src="/assets/logo.webp" alt="Execution Mastery with Matt Logo"></a>
+    <a href="/" class="logo"><img src="/assets/logo.webp" alt="Execution Mastery with Matt Logo" style="width:150px;height:auto;"></a>
     <nav class="site-nav">
       <ul>
-        <li><a href="/">HOME</a></li>
-        <li><a href="/contact">CONTACT</a></li>
-        <li><a href="/manage-subscription">MANAGE SUBSCRIPTION</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/manage-subscription">Manage Subscription</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="roadmap">
-    <!-- Item 1 -->
-    <div class="item">
-      <div class="content-box">
-        <h3>1. Knowledge board</h3>
-        <div class="meta">Automation • Planned: April 6, 2025</div>
-        <p><strong>Includes:</strong> Knowledge Board, Mobile, Content Sources DB, Content Items DB, Books DB, Courses DB, Notes & Thoughts DB, Knowledge Areas DB</p>
-        <div class="icons">
-          <a href="https://www.notion.so/1a7d27f154588001b469f3f4c83514ac"><img src="/assets/youtube.avif" alt="YouTube Icon"></a>
-        </div>
+  <!-- Main Content -->
+  <div id="page-content-height-resize">
+    <div class="page-content__inner">
+      <!-- Heading -->
+      <div class="page-content__component text_heading">
+        <h1>Roadmap</h1>
+      </div>
+      <!-- Placeholder for Roadmap -->
+      <div class="page-content__component text_placeholder">
+        <p>[Placeholder for roadmap]</p>
       </div>
     </div>
-    <!-- Item 2 -->
-    <div class="item">
-      <div class="content-box">
-        <h3>2. Knowledge consumption agent</h3>
-        <div class="meta">AI agent • Planned: April 6, 2025</div>
-        <p><strong>Includes:</strong> Retrieve content count, Retrieve content, Change status, Capture notes, Capture books, Capture courses</p>
-        <div class="icons">
-          <a href="https://www.notion.so/1e4d27f1545880eebe0bf16bfb27253d"><img src="/assets/youtube.avif" alt="YouTube Icon"></a>
-        </div>
-      </div>
-    </div>
-    <!-- Item 3 -->
-    <div class="item">
-      <div class="content-box">
-        <h3>3. Weekly knowledge review</h3>
-        <div class="meta">Routine • Planned: April 6, 2025</div>
-        <p><strong>Includes:</strong> Validate data, Review towards goals, Broaden horizons, Build expertise, Stay globally aware, Update knowledge areas</p>
-      </div>
-    </div>
-    <!-- Item 4 -->
-    <div class="item">
-      <div class="content-box">
-        <h3>4. Weekly knowledge review agent</h3>
-        <div class="meta">AI agent • Planned: July 6, 2025</div>
-        <p><strong>Includes:</strong> Validate data, Review towards goals, Broaden horizons, Build expertise, Stay globally aware, Update knowledge areas</p>
-        <div class="icons">
-          <a href="https://www.notion.so/1e4d27f1545880eebe0bf16bfb27253d"><img src="/assets/youtube.avif" alt="YouTube Icon"></a>
-          <a href="https://www.notion.so/1a7d27f1545880beaec2fcf047ab6cc2"><img src="/assets/package.jpg" alt="Product Icon"></a>
-        </div>
-      </div>
-    </div>
-    <!-- Item 5 (Disabled) -->
-    <div class="item">
-      <div class="content-box disabled">
-        <h3>5. Notes review and classification</h3>
-        <div class="meta">Routine • Planned: July 6, 2025</div>
-        <p><strong>Includes:</strong> Review new notes and assign them categories</p>
-      </div>
-    </div>
-    <!-- Item 6 (Disabled) -->
-    <div class="item">
-      <div class="content-box disabled">
-        <h3>6. Contacts board</h3>
-        <div class="meta">Notion board • Planned: May 11, 2025</div>
-        <p><strong>Includes:</strong> Contacts Board, Contacts DB, Locations DB, Industries DB, Skills DB, Languages DB, Companies DB, Interests DB, Services DB, Tags DB</p>
-      </div>
-    </div>
-  </section>
+  </div>
+
+  <!-- Footer (identical to Contact page) -->
+  <footer class="site-footer">
+    <!-- existing footer content here -->
+  </footer>
+
+  <script src="https://api.siter.io/assets/application.js"></script>
 </body>
 </html>

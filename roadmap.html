@@ -22,7 +22,7 @@
       font-family: var(--font);
       padding: 40px;
     }
-    /* Header with enlarged logo to match homepage */
+    /* Header with enlarged logo */
     .site-header {
       display: flex;
       align-items: center;
@@ -33,7 +33,7 @@
       z-index: 100;
     }
     .site-header .logo img {
-      width: 150px; /* Adjusted width to match homepage size */
+      width: 150px;
       height: auto;
     }
     .site-nav ul {
@@ -50,9 +50,7 @@
       transition: color 0.2s;
       white-space: nowrap;
     }
-    .site-nav a:hover {
-      color: var(--text-light);
-    }
+    .site-nav a:hover { color: var(--text-light); }
     .roadmap {
       position: relative;
       max-width: 900px;
@@ -62,27 +60,19 @@
     .roadmap::before {
       content: '';
       position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 4px;
-      height: 100%;
-      background: var(--line-color);
+      top: 0; left: 50%; transform: translateX(-50%);
+      width: 4px; height: 100%; background: var(--line-color);
     }
     .item {
       position: relative;
-      width: 50%;
-      padding: 20px 40px;
+      width: 50%; padding: 20px 40px;
     }
     .item:nth-child(odd) { left: 0; text-align: right; }
     .item:nth-child(even) { left: 50%; text-align: left; }
     .item::after {
       content: '';
-      position: absolute;
-      top: 30px;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
+      position: absolute; top: 30px;
+      width: 16px; height: 16px; border-radius: 50%;
       background: var(--accent);
       border: 4px solid transparent;
       box-shadow: 0 0 0 4px rgba(249,115,22,0.25);
@@ -133,7 +123,7 @@
         <div class="meta">Automation • Planned: April 6, 2025</div>
         <p><strong>Includes:</strong> Knowledge Board, Mobile, Content Sources DB, Content Items DB, Books DB, Courses DB, Notes & Thoughts DB, Knowledge Areas DB</p>
         <div class="icons">
-          <a href="https://www.notion.so/1a7d27f154588001b469f3f4c83514ac"><img src="/assets/icons/youtube-icon.jpg" alt="YouTube Icon"></a>
+          <a href="https://www.notion.so/1a7d27f154588001b469f3f4c83514ac"><img src="/assets/youtube.avif" alt="YouTube Icon"></a>
         </div>
       </div>
     </div>
@@ -144,7 +134,7 @@
         <div class="meta">AI agent • Planned: April 6, 2025</div>
         <p><strong>Includes:</strong> Retrieve content count, Retrieve content, Change status, Capture notes, Capture books, Capture courses</p>
         <div class="icons">
-          <a href="https://www.notion.so/1e4d27f1545880eebe0bf16bfb27253d"><img src="/assets/icons/youtube-icon.jpg" alt="YouTube Icon"></a>
+          <a href="https://www.notion.so/1e4d27f1545880eebe0bf16bfb27253d"><img src="/assets/youtube.avif" alt="YouTube Icon"></a>
         </div>
       </div>
     </div>
@@ -163,8 +153,8 @@
         <div class="meta">AI agent • Planned: July 6, 2025</div>
         <p><strong>Includes:</strong> Validate data, Review towards goals, Broaden horizons, Build expertise, Stay globally aware, Update knowledge areas</p>
         <div class="icons">
-          <a href="https://www.notion.so/1e4d27f1545880eebe0bf16bfb27253d"><img src="/assets/icons/youtube-icon.jpg" alt="YouTube Icon"></a>
-          <a href="https://www.notion.so/1a7d27f1545880beaec2fcf047ab6cc2"><img src="/assets/icons/package-icon.png" alt="Product Icon"></a>
+          <a href="https://www.notion.so/1e4d27f1545880eebe0bf16bfb27253d"><img src="/assets/youtube.avif" alt="YouTube Icon"></a>
+          <a href="https://www.notion.so/1a7d27f1545880beaec2fcf047ab6cc2"><img src="/assets/package.jpg" alt="Product Icon"></a>
         </div>
       </div>
     </div>

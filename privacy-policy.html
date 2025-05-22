@@ -220,18 +220,18 @@
          <div style="width: 100%; height: 100px; clear: both;"></div>
 
          <!-- Nowa stopka (footer) jako niezależny element, używający normalnego przepływu dokumentu -->
-         <footer style="background-color: #191919; width: 100%; padding: 40px 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 50px; clear: both;">
-            <div style="margin-bottom: 30px; display: flex; justify-content: center;">
-               <div style="display: flex; margin-right: 50px;">
-                  <a href="/terms-and-conditions" style="color: white; text-decoration: none; margin: 0 15px; font-family: Lato; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;">TERMS & CONDITIONS</a>
-                  <a href="/privacy-policy" style="color: white; text-decoration: none; margin: 0 15px; font-family: Lato; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;">PRIVACY POLICY</a>
+         <footer style="background-color: #191919; width: 100%; padding: 40px 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 50px; clear: both; position: relative; z-index: 100;">
+            <div style="margin-bottom: 30px; display: flex; justify-content: center; position: relative; z-index: 101;">
+               <div style="display: flex; margin-right: 50px; position: relative; z-index: 102;">
+                  <a href="/terms-and-conditions" style="color: white; text-decoration: none; margin: 0 15px; font-family: Lato; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; position: relative; z-index: 103;">TERMS & CONDITIONS</a>
+                  <a href="/privacy-policy" style="color: white; text-decoration: none; margin: 0 15px; font-family: Lato; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; position: relative; z-index: 103;">PRIVACY POLICY</a>
                </div>
                
-               <div style="display: flex; align-items: center;">
-                  <a href="https://www.instagram.com/executionmasterywithmatt/" target="_blank" style="margin: 0 10px;">
+               <div style="display: flex; align-items: center; position: relative; z-index: 102;">
+                  <a href="https://www.instagram.com/executionmasterywithmatt/" target="_blank" style="margin: 0 10px; position: relative; z-index: 103;">
                      <img src="https://cdn.siter.io/assets/ast_zVXZBe5nRSSGZsZzmRjju7DvT/db665fb9-b4de-49a5-906c-58da4580f762.webp" alt="Instagram" style="width: 28px; height: 33px;">
                   </a>
-                  <a href="https://www.youtube.com/@executionmasterywithmatt" target="_blank" style="margin: 0 10px;">
+                  <a href="https://www.youtube.com/@executionmasterywithmatt" target="_blank" style="margin: 0 10px; position: relative; z-index: 103;">
                      <img src="https://cdn.siter.io/assets/ast_1MbpSzAJgA6r6xA5mmm5fGMX8/dc9bd85a-cf97-49b1-8ba5-59b91aa3ffc2.webp" alt="YouTube" style="width: 32px; height: 33px;">
                   </a>
                </div>

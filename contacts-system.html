@@ -177,23 +177,32 @@
                
                <!-- CONTENT PLACEHOLDER START -->
                <div style="margin-top: 70px; margin-bottom: 100px; display: flex; justify-content: center; align-items: center; width: 100%;">
-                  <div style="max-width: 550px; width: 90%; background-color: #1f2937; border: 3px solid #f97316; border-radius: 15px; padding: 40px; text-align: center; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+                  <div style="max-width: 550px; width: 90%; background-color: #1f2937; border: 3px solid #f97316; border-radius: 15px; padding: 40px; text-align: center; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);">
                      <h2 style="font-size: 28px; color: #ffffff; margin-bottom: 20px; font-weight: 700; line-height: 1.4;">Join the Contacts System Waitlist</h2>
                      <p style="color: #9ca3af; font-size: 18px; line-height: 1.6; margin-bottom: 24px;">
                         Be the first to get access to the new Contacts System!<br>
-                        Enter your details below to join the waitlist and secure a <span style='color:#f97316;font-weight:700;'>50% discount</span> when the product launches.
+                        Enter your details below to join the waitlist and secure a <span style="color:#f97316;font-weight:700;">50% discount</span> when the product launches.
                      </p>
-                     <div class="modal-form-container">
-                        <form class="modal-form" id="waitlist-form">
-                           <input type="text" name="name" placeholder="Your name" required style="padding: 15px 20px; border: 1px solid #374151; background-color: #111827; border-radius: 6px; margin-bottom: 25px; font-size: 18px; color: #e5e7eb; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
-                           <input type="email" name="email" placeholder="Your email address" required style="padding: 15px 20px; border: 1px solid #374151; background-color: #111827; border-radius: 6px; margin-bottom: 25px; font-size: 18px; color: #e5e7eb; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
-                           <textarea name="feedback" placeholder="What features would you like to see? (optional)" style="padding: 15px 20px; border: 1px solid #374151; background-color: #111827; border-radius: 6px; margin-bottom: 25px; font-size: 18px; color: #e5e7eb; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; min-height: 100px; resize: vertical;"></textarea>
-                           <button type="submit" style="background-color: #f97316; color: #fff; font-weight: 700; font-size: 18px; padding: 15px; border: none; border-radius: 6px; cursor: pointer; transition: background-color 0.3s; letter-spacing: 0.05em; text-transform: uppercase; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">Notify Me</button>
+                     <div id="form-container">
+                        <form id="waitlist-form">
+                           <input type="text" id="name" name="name" placeholder="Your name" required 
+                                  style="width: 100%; padding: 15px; margin-bottom: 20px; border: 1px solid #374151; background-color: #111827; color: #ffffff; border-radius: 6px; font-size: 16px; box-sizing: border-box;">
+                           
+                           <input type="email" id="email" name="email" placeholder="Your email address" required 
+                                  style="width: 100%; padding: 15px; margin-bottom: 20px; border: 1px solid #374151; background-color: #111827; color: #ffffff; border-radius: 6px; font-size: 16px; box-sizing: border-box;">
+                           
+                           <textarea id="feedback" name="feedback" placeholder="What features would you like to see? (optional)" 
+                                     style="width: 100%; padding: 15px; margin-bottom: 20px; border: 1px solid #374151; background-color: #111827; color: #ffffff; border-radius: 6px; font-size: 16px; min-height: 120px; box-sizing: border-box; resize: vertical;"></textarea>
+                           
+                           <button type="submit" 
+                                   style="width: 100%; background-color: #f97316; color: #ffffff; font-weight: 700; font-size: 18px; padding: 15px; border: none; border-radius: 6px; cursor: pointer; text-transform: uppercase; letter-spacing: 0.05em;">
+                              Notify Me
+                           </button>
                         </form>
                      </div>
                      <div id="success-message" style="display: none; text-align: center;">
                         <div style="font-size: 48px; color: #10b981; margin-bottom: 15px;">✓</div>
-                        <div style="font-size: 18px; color: #e5e7eb; margin-bottom: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">Thank you! We'll notify you when this product is ready.</div>
+                        <div style="font-size: 18px; color: #e5e7eb; margin-bottom: 20px;">Thank you! We'll notify you when this product is ready.</div>
                      </div>
                      <div style="margin-top: 18px; color: #f97316; font-size: 16px; font-weight: 600;">
                         50% discount for all waitlist members at launch!
@@ -205,11 +214,11 @@
                <script>
                   document.addEventListener('DOMContentLoaded', function() {
                      const form = document.getElementById('waitlist-form');
-                     const formContainer = document.querySelector('.modal-form-container');
+                     const formContainer = document.getElementById('form-container');
                      const successMessage = document.getElementById('success-message');
                      
-                     // Add focus styles to inputs
-                     const inputs = form.querySelectorAll('input, textarea');
+                     // Add hover effect for inputs
+                     const inputs = document.querySelectorAll('input, textarea');
                      inputs.forEach(input => {
                         input.addEventListener('focus', function() {
                            this.style.borderColor = '#f97316';
@@ -220,14 +229,15 @@
                         });
                      });
                      
+                     // Form submission
                      form.addEventListener('submit', function(e) {
                         e.preventDefault();
                         
-                        const name = form.elements.name.value;
-                        const email = form.elements.email.value;
-                        const feedback = form.elements.feedback.value;
+                        const name = document.getElementById('name').value;
+                        const email = document.getElementById('email').value;
+                        const feedback = document.getElementById('feedback').value;
                         
-                        // Submit data to endpoint
+                        // Submit to endpoint
                         fetch('https://primary-production-59ae.up.railway.app/webhook/e905492c-bf54-4650-bec7-bdc58b0eb938/chat/completions', {
                            method: 'POST',
                            headers: {
@@ -245,7 +255,7 @@
                            formContainer.style.display = 'none';
                            successMessage.style.display = 'block';
                            
-                           // Reset form and hide success message after delay
+                           // Reset form after delay
                            setTimeout(() => {
                               form.reset();
                               formContainer.style.display = 'block';

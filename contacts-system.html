@@ -6,20 +6,13 @@
       <meta property="og:type" content="website">
       <meta property="og:title" content="Execution Mastery with Matt - Contacts System Waitlist">
       <meta property="og:description" content="Sign up for the Contacts System waitlist and secure a 50% discount at launch. Manage your contacts smarter with AI agents.">
-      <meta property="og:image" content="https://s3.us-east-1.amazonaws.com/cdn-siter/dd968b71-bf01-4138-8aea-c946b8695f4b-url_og_image.png">
+      <meta property="og:image" content="/assets/og_image_placeholder.png">
       <meta property="twitter:card" content="summary_large_image">
       <meta property="twitter:title" content="Execution Mastery with Matt - Contacts System Waitlist">
       <meta property="twitter:description" content="Sign up for the Contacts System waitlist and secure a 50% discount at launch. Manage your contacts smarter with AI agents.">
-      <meta property="twitter:image" content="https://s3.us-east-1.amazonaws.com/cdn-siter/dd968b71-bf01-4138-8aea-c946b8695f4b-url_og_image.png">
+      <meta property="twitter:image" content="/assets/og_image_placeholder.png">
       <link rel="icon" type="image/png" href="/assets/favicon.png">
-      <script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/aa3fc80b/www-widgetapi.vflset/www-widgetapi.js" async=""></script><script type="text/javascript" id="variables">
-         window.site_id = 'execution-master-1742504519403'
-         window.page_id = 'pg_FUT65FntCnND7nyj2Zd2EpEWD'
-         window.pages = [{"path":"execution-mastery-with-matt-contact","id":"pg_48fQk4awV5LGB5dTh4woZeLY9","home":false},{"path":"execution_mastery_with_matt_-_contact_hviktx","id":"pg_FUT65FntCnND7nyj2Zd2EpEWD","home":false},{"path":"execution-mastery-with-matt-home","id":"pg_rAJv8akGMwB3kW6Ykvio2MHV7","home":true},{"path":"execution-mastery-with-matt-privacy-policy","id":"pg_iHbNPpGZLeqqv85ok7MLzkCFm","home":false},{"path":"execution-mastery-with-matt-terms-and-conditions","id":"pg_prXvzkrrzLbuKsaVe2bW6CvMo","home":false}];
-         window.preview = true;
-         window.devices = [{"name":"desktop","title":"Desktop","width":1200}]
-      </script> 
-      <link rel="stylesheet" media="screen" href="https://api.siter.io/assets/application-47d9c80bc006194ad960d6dc2d9708abf9e984360309d1d501e7acce8017c331.css">
+      <script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/aa3fc80b/www-widgetapi.vflset/www-widgetapi.js" async=""></script>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800%7CLato:100,200,300,400,500,600,700,800" media="all">
       <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/60/10/intl/en_gb/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/60/10/intl/en_gb/util.js"></script>
       <style>
@@ -133,6 +126,8 @@
           resize: vertical;
         }
       </style>
+      
+
    </head>
    <body class="siter-ready" cz-shortcut-listen="true">
       <div class="siter-page page_pg_FUT65FntCnND7nyj2Zd2EpEWD" id="page-content-height-resize" style="">
@@ -183,8 +178,8 @@
                         Be the first to get access to the new Contacts System!<br>
                         Enter your details below to join the waitlist and secure a <span style="color:#f97316;font-weight:700;">50% discount</span> when the product launches.
                      </p>
-                     <div id="form-container">
-                        <form id="waitlist-form">
+                     <div class="modal-form-container">
+                        <form class="modal-form" id="waitlist-form">
                            <input type="text" id="name" name="name" placeholder="Your name" required 
                                   style="width: 100%; padding: 15px; margin-bottom: 20px; border: 1px solid #374151; background-color: #111827; color: #ffffff; border-radius: 6px; font-size: 16px; box-sizing: border-box;">
                            
@@ -194,13 +189,15 @@
                            <textarea id="feedback" name="feedback" placeholder="What features would you like to see? (optional)" 
                                      style="width: 100%; padding: 15px; margin-bottom: 20px; border: 1px solid #374151; background-color: #111827; color: #ffffff; border-radius: 6px; font-size: 16px; min-height: 120px; box-sizing: border-box; resize: vertical;"></textarea>
                            
+                           <input type="hidden" id="product-name" value="Contacts System Waitlist">
+                           
                            <button type="submit" 
                                    style="width: 100%; background-color: #f97316; color: #ffffff; font-weight: 700; font-size: 18px; padding: 15px; border: none; border-radius: 6px; cursor: pointer; text-transform: uppercase; letter-spacing: 0.05em;">
                               Notify Me
                            </button>
                         </form>
                      </div>
-                     <div id="success-message" style="display: none; text-align: center;">
+                     <div class="modal-success" style="display: none; text-align: center;">
                         <div style="font-size: 48px; color: #10b981; margin-bottom: 15px;">✓</div>
                         <div style="font-size: 18px; color: #e5e7eb; margin-bottom: 20px;">Thank you! We'll notify you when this product is ready.</div>
                      </div>
@@ -214,8 +211,8 @@
                <script>
                   document.addEventListener('DOMContentLoaded', function() {
                      const form = document.getElementById('waitlist-form');
-                     const formContainer = document.getElementById('form-container');
-                     const successMessage = document.getElementById('success-message');
+                     const formContainer = document.querySelector('.modal-form-container');
+                     const successMessage = document.querySelector('.modal-success');
                      
                      // Add hover effect for inputs
                      const inputs = document.querySelectorAll('input, textarea');
@@ -236,6 +233,7 @@
                         const name = document.getElementById('name').value;
                         const email = document.getElementById('email').value;
                         const feedback = document.getElementById('feedback').value;
+                        const productName = document.getElementById('product-name').value;
                         
                         // Submit to endpoint
                         fetch('https://primary-production-59ae.up.railway.app/webhook/e905492c-bf54-4650-bec7-bdc58b0eb938/chat/completions', {
@@ -247,7 +245,7 @@
                               name: name,
                               email: email,
                               feedback: feedback,
-                              product: 'Contact System Waitlist'
+                              product: productName
                            })
                         })
                         .then(response => {
@@ -286,10 +284,13 @@
                
                <div style="display: flex; align-items: center;">
                   <a href="https://www.instagram.com/executionmasterywithmatt/" target="_blank" style="margin: 0 10px;">
-                     <img src="https://cdn.siter.io/assets/ast_zVXZBe5nRSSGZsZzmRjju7DvT/db665fb9-b4de-49a5-906c-58da4580f762.webp" alt="Instagram" style="width: 28px; height: 33px;">
+                     <img src="/assets/instagram.png" alt="Instagram" style="width: 32px; height: 32px; display: block;">
                   </a>
                   <a href="https://www.youtube.com/@executionmasterywithmatt" target="_blank" style="margin: 0 10px;">
-                     <img src="https://cdn.siter.io/assets/ast_1MbpSzAJgA6r6xA5mmm5fGMX8/dc9bd85a-cf97-49b1-8ba5-59b91aa3ffc2.webp" alt="YouTube" style="width: 32px; height: 33px;">
+                     <img src="/assets/youtube.png" alt="YouTube" style="width: 32px; height: 32px; display: block;">
+                  </a>
+                  <a href="https://www.linkedin.com/in/mateusz-piechowiak-1560ba109/" target="_blank" style="margin: 0 10px;">
+                     <img src="/assets/linkedin.png" alt="LinkedIn" style="width: 32px; height: 32px; display: block;">
                   </a>
                </div>
             </div>
@@ -312,11 +313,7 @@
             </span>
          </div>
       </div>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <script src="https://www.youtube.com/iframe_api"></script> <script src="https://player.vimeo.com/api/player.js"></script> <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrutUSPfjuwC8b4W9pitclowi3btRQkMo&amp;v=3.exp&amp;libraries=geometry,drawing,places"></script> <script src="https://api.siter.io/assets/anime.min-8439bccbde3050f7ead5acddedd897fd20bc7203a3ba209514f38680f12ebab0.js"></script> 
-      <link rel="stylesheet" href="https://api.siter.io/assets/magnific-popup-2f7f85183333c84a42262b5f8a4f8251958809e29fa31c65bdee53c4603502cd.css">
-      <script src="https://api.siter.io/assets/magnific-popup.min-df6ae89414437784941d5dc0ada892e5c27aac18e58676eba0fa1b5e6b288b74.js"></script> <script src="https://api.siter.io/assets/swiper.min-dceaef8c10f13b33b0328938ecbe2b8c3f0d03f28ae56a8864c767b8a2d21caf.js"></script> 
-      <link rel="stylesheet" href="https://api.siter.io/assets/swiper-18be8aa3f032dded246a45a9da3dafdb3934e39e1f1b3b623c1722f3152b2788.css">
-      <script src="https://api.siter.io/assets/application-76eac2b6321199bdc89e038b18b277f6cebfc6946fff09a7acee384e0c26512b.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <script src="https://www.youtube.com/iframe_api"></script> <script src="https://player.vimeo.com/api/player.js"></script> <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrutUSPfjuwC8b4W9pitclowi3btRQkMo&amp;v=3.exp&amp;libraries=geometry,drawing,places"></script>
       <script>const siterEffects = {}</script>
    </body>
 </html>

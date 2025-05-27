@@ -89,6 +89,43 @@
         .dropdown:hover .dropbtn {
           color: rgba(250,250,250,1);
         }
+        /* Tooltip styles */
+        .tooltip-overlay,
+        .tooltip-content {
+          visibility: hidden;
+          opacity: 0;
+          pointer-events: none;
+        }
+        .content-box:hover .tooltip-overlay,
+        .content-box:hover .tooltip-content {
+          visibility: visible;
+          opacity: 1;
+          pointer-events: auto;
+        }
+        .tooltip-overlay {
+          background-color: #000;
+        }
+        .tooltip-content {
+          background-color: #1e293b;
+          box-shadow: 0 0 20px #000;
+          opacity: 0;
+          font-size: 1.45em;
+          line-height: 1.8;
+        }
+        .tooltip-content h4 {
+          margin-top: 0;
+          margin-bottom: 8px;
+          color: var(--rm-accent);
+          font-size: 1.55em;
+          font-weight: 900;
+          letter-spacing: 0.01em;
+        }
+        .tooltip-content ul {
+          font-size: 1.25em;
+        }
+        .content-box:hover .tooltip-content {
+          opacity: 1;
+        }
       </style>
    </head>
    <body class="siter-ready" cz-shortcut-listen="true">
@@ -128,12 +165,13 @@
                
 
                <div class="page-content__component text_2f7d5f33-c035-4fed-9cf4-ac687ea56f4e" data-container="grid" id="2f7d5f33-c035-4fed-9cf4-ac687ea56f4e" data-type="text" style="text-align: center; margin-top: 120px; margin-bottom: 30px;">
-                  <div data-wysiwyg="true" style="font-family:Lato;font-weight:900;font-size:50px;color:rgba(229,231,235,1);letter-spacing:-0.02em;">Your Path to Execution Mastery</div>
+                  <div data-wysiwyg="true" style="font-family:Lato;font-weight:900;font-size:50px;color:rgba(229,231,235,1);letter-spacing:-0.02em;">The future of execution is here. Don’t get left behind.</div>
                </div>
                
                <div style="max-width: 800px; margin: 0 auto 10px; text-align: center;">
                   <p style="color: #9ca3af; font-size: 20px; line-height: 1.6; margin-bottom: 30px;">
-                    Discover our complete ecosystem of AI-powered tools designed to transform how you manage contacts, knowledge, goals, and time. Each component builds upon the previous ones, creating a comprehensive system that grows with your needs.
+                     Step into a next-gen ecosystem of AI agents built for people who can’t afford to fall behind. Manage your goals, time, knowledge, and contacts with a system that doesn’t just support you—it thinks ahead for you.
+                     Every module is a building block, designed to scale with your ambition. Miss this, and you’ll keep playing catch-up.
                   </p>
                </div>
 
@@ -268,22 +306,6 @@
                         font-size: 14px;
                         color: var(--rm-text-muted);
                      }
-                     .tooltip-overlay {
-                        position: fixed;
-                        top: 0;
-                        left: 0;
-                        right: 0;
-                        bottom: 0;
-                        background-color: rgba(0, 0, 0, 0.7);
-                        z-index: 99990;
-                        visibility: hidden;
-                        opacity: 0;
-                        transition: opacity 0.3s;
-                     }
-                     .tooltip-container:hover .tooltip-overlay {
-                        visibility: visible;
-                        opacity: 1;
-                     }
                      .tooltip-content {
                         visibility: hidden;
                         position: fixed;
@@ -304,10 +326,6 @@
                         text-align: left;
                         color: #f3f4f6;
                      }
-                     .tooltip-container:hover .tooltip-content {
-                        visibility: visible;
-                        opacity: 1;
-                     }
                      .tooltip-content::before,
                      .tooltip-content::after {
                         display: none;
@@ -316,7 +334,9 @@
                         margin-top: 0;
                         margin-bottom: 8px;
                         color: var(--rm-accent);
-                        font-size: 0.95em;
+                        font-size: 1.55em;
+                        font-weight: 900;
+                        letter-spacing: 0.01em;
                      }
                      .tooltip-content ul {
                         margin: 8px 0;
@@ -460,47 +480,43 @@
                   <div class="roadmap-container">
                   <section class="roadmap">
                      <div class="item">
-                        <div class="content-box disabled">
+                        <div class="content-box">
                            <h3 class="two-lines">1. AI-Powered Contact Management Hub 👥</h3>
                            <div class="status-indicator">
                               <!-- Removed status dot as requested -->
-                              <span class="meta">Release: June 8, 2025
-                              <span class="tooltip-container">
-                                 <span class="tooltip-icon">ⓘ</span>
-                                 <div class="tooltip-overlay"></div>
-                                 <div class="tooltip-content">
-                                    <h4>🛠️ Problems It Solves:</h4>
-                                    <ul>
-                                       <li>Contacts are scattered across tools and hard to manage.</li>
-                                       <li>You forget who people are or where you met them.</li>
-                                       <li>No single place to track relationships, attributes, or context.</li>
-                                       <li>You don't remember who you know in key industries or with relevant skills.</li>
-                                       <li>Important follow-ups are missed or forgotten.</li>
-                                       <li>Entering and updating contact data manually is time-consuming and often skipped.</li>
-                                       <li>The system becomes outdated if not reviewed regularly.</li>
-                                       <li>You lack the time or discipline to maintain your network consistently.</li>
-                                    </ul>
-                                    <h4>✅ What User Gains:</h4>
-                                    <ul>
-                                       <li>All your contacts, attributes, and interactions in one smart, searchable place.</li>
-                                       <li>Voice-based agent lets you add, edit, and search contacts without typing.</li>
-                                       <li>See relationship maps: who knows whom, who works with whom.</li>
-                                       <li>Smart detection of neglected contacts and upcoming follow-ups.</li>
-                                       <li>Weekly AI-guided review that keeps everything up to date — even if you're busy.</li>
-                                       <li>Peace of mind that your contact network is alive, organized, and ready when you need it.</li>
-                                    </ul>
-               </div>
-                              </span>
-                              </span>
-               </div>
+                              <span class="meta">Release: June 8, 2025</span>
+                           </div>
+                           <div class="tooltip-overlay"></div>
+                           <div class="tooltip-content">
+                              <h4>🛠️ Problems It Solves:</h4>
+                              <ul>
+                                 <li>Contacts are scattered across tools and hard to manage.</li>
+                                 <li>You forget who people are or where you met them.</li>
+                                 <li>No single place to track relationships, attributes, or context.</li>
+                                 <li>You don't remember who you know in key industries or with relevant skills.</li>
+                                 <li>Important follow-ups are missed or forgotten.</li>
+                                 <li>Entering and updating contact data manually is time-consuming and often skipped.</li>
+                                 <li>The system becomes outdated if not reviewed regularly.</li>
+                                 <li>You lack the time or discipline to maintain your network consistently.</li>
+                              </ul>
+                              <h4>✅ What User Gains:</h4>
+                              <ul>
+                                 <li>All your contacts, attributes, and interactions in one smart, searchable place.</li>
+                                 <li>Voice-based agent lets you add, edit, and search contacts without typing.</li>
+                                 <li>See relationship maps: who knows whom, who works with whom.</li>
+                                 <li>Smart detection of neglected contacts and upcoming follow-ups.</li>
+                                 <li>Weekly AI-guided review that keeps everything up to date — even if you're busy.</li>
+                                 <li>Peace of mind that your contact network is alive, organized, and ready when you need it.</li>
+                              </ul>
+                           </div>
                            <p>A powerful contact system that combines a centralized Notion board with AI agents to capture, organize, update, and review every contact, relationship and interaction, without manual effort.</p>
                            <div class="icons">
                               <a href="https://executionmasterywithmatt.com/contacts-system" tab-index="6" class="icon-label" target="_blank">
-                                 <img src="/assets/waiting list.png" alt="Waitlist Icon"> Join Waitlist
+                                 <img src="/assets/waiting list.png" alt="Waitlist Icon"> Join Waitlist (Get 50% off)
                               </a>
-               </div>
-               </div>
-                  </div>
+                           </div>
+                        </div>
+                     </div>
                      <div class="item">
                         <div class="content-box disabled">
                            <h3 class="two-lines">2. Smart Email Inbox Assistant 👥</h3>
@@ -511,11 +527,11 @@
                            <p>Advanced email management system with an AI agent that can summarize your emails, prepare draft responses, label, archive, delete, and organize your inbox efficiently. Never miss an important message and keep your inbox under control with smart automation.</p>
                            <div class="icons">
                               <a href="https://executionmasterywithmatt.com/contacts-system" tab-index="7" class="icon-label" target="_blank">
-                                 <img src="/assets/waiting list.png" alt="Waitlist Icon"> Join Waitlist
+                                 <img src="/assets/waiting list.png" alt="Waitlist Icon"> Join Waitlist (Get 50% off)
                               </a>
-               </div>
-               </div>
-               </div>
+                           </div>
+                        </div>
+                     </div>
                      <div class="item">
                         <div class="content-box disabled">
                            <h3 class="two-lines">3. Unified Messaging Assistant 👥</h3>
@@ -526,25 +542,25 @@
                            <p>Unified messaging management system with an AI agent that connects to tools like Telegram, etc. The agent summarizes incoming messages, prepares suggested replies, and can send responses directly, so you can manage all your conversations from one place without switching between apps.</p>
                            <div class="icons">
                               <a href="https://executionmasterywithmatt.com/contacts-system" tab-index="8" class="icon-label" target="_blank">
-                                 <img src="/assets/waiting list.png" alt="Waitlist Icon"> Join Waitlist
+                                 <img src="/assets/waiting list.png" alt="Waitlist Icon"> Join Waitlist (Get 50% off)
                               </a>
-               </div>
-               </div>
-               </div>
+                           </div>
+                        </div>
+                     </div>
                      <div class="item">
                         <div class="content-box disabled">
                            <h3 class="two-lines">4. All-in-One Contact Management Platform 👥</h3>
                            <div class="status-indicator">
                               <!-- Removed status dot as requested -->
                               <span class="meta">Release: July 20, 2025</span>
-                     </div>
+                           </div>
                            <p>Comprehensive contact management solution that combines all previous systems into one powerful platform. Built around a custom Notion template, it integrates the Contact Board with email, messaging, and all AI agents in one web application, accessible both as a standalone app and directly within Notion. Interact with all agents through a unified interface, whether you're on mobile, desktop, or in Notion, using both text and voice commands.</p>
                            <div class="icons">
                               <a href="https://executionmasterywithmatt.com/contacts-system" tab-index="9" class="icon-label" target="_blank">
-                                 <img src="/assets/waiting list.png" alt="Waitlist Icon"> Join Waitlist
+                                 <img src="/assets/waiting list.png" alt="Waitlist Icon"> Join Waitlist (Get 50% off)
                               </a>
-                     </div>
-                  </div>
+                           </div>
+                        </div>
                      </div>
                      <div class="item">
                         <div class="content-box disabled">
@@ -552,59 +568,58 @@
                            <div class="status-indicator">
                               <!-- Removed status dot as requested -->
                               <span class="meta">Release: August 3, 2025</span>
-                     </div>
-
+                           </div>
                            <p>A smart Notion-based system for organizing and absorbing knowledge with the help of AI agents. It lets you store, classify, and connect your notes and ideas in one place. It includes a voice-enabled agent that captures insights while you consume content, an agent that helps you review and categorize your notes, and a weekly knowledge review routine fully guided by AI so nothing valuable gets lost.</p>
                            <div class="icons">
                               <a href="javascript:void(0)" tab-index="10" class="icon-label" onclick="openNotifyModal('Smart Knowledge Capture & Organization System')">
                                  <img src="/assets/notify.png" alt="Notify Icon"> Notify Me
                               </a>
-                  </div>
-                  </div>
-                  </div>
+                           </div>
+                        </div>
+                     </div>
                      <div class="item">
                         <div class="content-box disabled">
                            <h3 class="two-lines">6. Integrated Contacts & Knowledge Hub 👥📚</h3>
                            <div class="status-indicator">
                               <!-- Removed status dot as requested -->
                               <span class="meta">Release: August 17, 2025</span>
-               </div>
+                           </div>
                            <p>A combined system that brings together the full Contact Management platform with the advanced Knowledge System. Capture, organize, and retrieve both contact information and personal knowledge effortlessly, all in one place. Interact with AI agents through voice or text to manage relationships and access your knowledge base, without manual work.</p>
                            <div class="icons">
                               <a href="javascript:void(0)" tab-index="11" class="icon-label" onclick="openNotifyModal('Integrated Contacts & Knowledge Hub')">
                                  <img src="/assets/notify.png" alt="Notify Icon"> Notify Me
                               </a>
-               </div>
-               </div>
-               </div>
+                           </div>
+                        </div>
+                     </div>
                      <div class="item">
                         <div class="content-box disabled">
                            <h3 class="two-lines">7. Life Vision & Goals Dashboard 🎯</h3>
                            <div class="status-indicator">
                               <!-- Removed status dot as requested -->
                               <span class="meta">Release: August 31, 2025</span>
-               </div>
+                           </div>
                            <p>A central Notion board for managing your entire life vision, goals, tasks, and key metrics. Everything is structured across years, quarters, weeks, and days to give you full clarity and alignment. Includes a powerful AI agent to quickly capture goals, tasks, and ideas, along with built-in metric tracking across all life areas to help you measure progress over time and stay focused on what truly matters.</p>
                            <div class="icons">
                               <a href="javascript:void(0)" tab-index="12" class="icon-label" onclick="openNotifyModal('Life Vision & Goals Dashboard')">
                                  <img src="/assets/notify.png" alt="Notify Icon"> Notify Me
                               </a>
-               </div>
-                  </div>
-                  </div>
+                           </div>
+                        </div>
+                     </div>
                      <div class="item">
                         <div class="content-box disabled">
                            <h3 class="two-lines">8. Annual Vision & Review System 🎯</h3>
                            <div class="status-indicator">
                               <!-- Removed status dot as requested -->
                               <span class="meta">Release: September 14, 2025</span>
-                  </div>
+                           </div>
                            <p>A yearly planning routine designed to help you recalibrate your life vision, review the past year, and extract meaningful insights. Guided by an AI agent, this process helps you set a clear direction for the year ahead with clarity and purpose.</p>
                            <div class="icons">
                               <a href="javascript:void(0)" tab-index="13" class="icon-label" onclick="openNotifyModal('Annual Vision & Review System')">
                                  <img src="/assets/notify.png" alt="Notify Icon"> Notify Me
                               </a>
-               </div>
+                           </div>
                         </div>
                      </div>
                      <div class="item">

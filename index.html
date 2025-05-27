@@ -876,8 +876,9 @@
                      'Content-Type': 'application/json'
                   },
                   body: JSON.stringify({
+                     name: name,
                      email: email,
-                     product: productName
+                     list: productName
                   })
                })
                .then(response => {
